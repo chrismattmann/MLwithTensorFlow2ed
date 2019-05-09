@@ -8,3 +8,7 @@ Document Classifier.ipynb
 TalkingMachinesPodcast.wav
 audio_dataset
 doc-sensitivity*
+*.zip
+*.pdf
+*.tar.gz
+User Identification From Walking Activity
