@@ -1,2 +1,2 @@
-model_checkpoint_path: "doc-sensitivity-softmax-reg.ckpt"
-all_model_checkpoint_paths: "doc-sensitivity-softmax-reg.ckpt"
+model_checkpoint_path: "model.ckpt"
+all_model_checkpoint_paths: "model.ckpt"
