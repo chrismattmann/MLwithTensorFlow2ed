@@ -14,5 +14,8 @@ doc-sensitivity*
 User Identification From Walking Activity
 mobypos.txt
 cifar-10*
+cifar10-model
+vgg_face_dataset
+vgg_face_full.csv
 logs
 aug*.npy
