@@ -10,7 +10,7 @@ print('Reading Dataframe.')
 df = pd.read_csv('vgg_face_full.csv')
 
 tqdm_nn.pandas()
-timeout=0.0001
+timeout=1
 
 def url_ok(url):
     try:
@@ -22,6 +22,7 @@ def url_ok(url):
 
 def fx(df):
     df['VALID_URL'] = df['URL'].progress_apply(url_ok)
+    return df
 
 def parallelize_dataframe(df, func, n_cores=8):
     df_split = np.array_split(df, n_cores)
@@ -32,4 +33,5 @@ def parallelize_dataframe(df, func, n_cores=8):
     return df
 
 df = parallelize_dataframe(df, fx)
+print('Writing Dataframe.')
 df.to_csv('vgg_face_full_urls.csv')
