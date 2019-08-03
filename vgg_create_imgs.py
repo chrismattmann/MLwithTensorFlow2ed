@@ -13,6 +13,10 @@ from urllib.error import HTTPError, URLError
 from requests.exceptions import ConnectionError
 from requests.exceptions import ReadTimeout
 from http.client import IncompleteRead
+import socket
+from socket import timeout
+
+socket.setdefaulttimeout(30)
 
 def fx(df):
     for index, row in tqdm(df.iterrows()):
@@ -41,7 +45,7 @@ def clip_image_and_save(url, bbox, celeb, number):
     
     try:
         image = imread(url)
-    except (AttributeError, HTTPError, ConnectionResetError, ConnectionRefusedError, URLError, ValueError, IncompleteRead) as e:
+    except (SyntaxError, IndexError, AttributeError, HTTPError, ConnectionResetError, ConnectionRefusedError, URLError, ValueError, IncompleteRead, TimeoutError, timeout) as e:
         print('Error writing url: '+url+' skipping. Message: '+str(e))
         return
     

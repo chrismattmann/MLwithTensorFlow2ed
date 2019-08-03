@@ -21,3 +21,4 @@ logs
 aug*.npy
 vgg-face
 vgg_face_full_urls.csv
+vgg-face-1000epochs*
