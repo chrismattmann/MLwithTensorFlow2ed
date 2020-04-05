@@ -32,3 +32,5 @@ vgg-models
 *clean_sensitivity*
 foobar
 COVID-19
+MNIST_data
+log.csv
