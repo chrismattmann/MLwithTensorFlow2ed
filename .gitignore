@@ -11,6 +11,7 @@ doc-sensitivity*
 *.zip
 *.pdf
 *.tar.gz
+*.tar
 User Identification From Walking Activity
 mobypos.txt
 cifar-10*
