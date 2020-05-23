@@ -34,3 +34,5 @@ foobar
 COVID-19
 MNIST_data
 log.csv
+*.mat
+cuda*.sh
