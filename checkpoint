@@ -1,2 +1,2 @@
-model_checkpoint_path: "vgg-face-1000epochs.ckpt"
-all_model_checkpoint_paths: "vgg-face-1000epochs.ckpt"
+model_checkpoint_path: "ch10-model2.ckpt"
+all_model_checkpoint_paths: "ch10-model2.ckpt"
