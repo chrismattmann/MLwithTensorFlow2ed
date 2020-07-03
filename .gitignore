@@ -37,3 +37,5 @@ MNIST_data
 log.csv
 *.mat
 cuda*.sh
+LibriSpeech*
+RNN-Tutorial
