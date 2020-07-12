@@ -39,3 +39,4 @@ log.csv
 cuda*.sh
 LibriSpeech*
 RNN-Tutorial
+seq2seq
