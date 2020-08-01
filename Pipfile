@@ -1,0 +1,34 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+black = "*"
+
+[packages]
+tensorflow = "~=1.15"
+jupyter = "~=1.0"
+Keras = "~=2.3"
+matplotlib = "~=3.1"
+nltk = "~=3.4"
+numpy = "~=1.17"
+opencv-python = "~=4.1.2"
+pandas = "~=0.25"
+Pillow = "~=6.2"
+requests = "~=2.22"
+scikit-image = "~=0.16"
+scikit-learn = "~=0.22"
+tika = "~=1.22"
+tqdm = "~=4.40"
+ystockquote = "~=0.2"
+horovod = "~=0.18"
+## bregman only works with Python 2, so we probably should ditch it.
+# bregman = {file = "https://github.com/bregmanstudio/BregmanToolkit/archive/master.zip"}
+sndfile = "~=0.2"
+
+[requires]
+python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
