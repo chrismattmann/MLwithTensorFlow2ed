@@ -1,4 +1,5 @@
 libs
+data/*.csv
 data/cache
 data/vgg*
 .ipynb_checkpoints
