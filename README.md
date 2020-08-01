@@ -52,6 +52,8 @@ the notebooks will generate TF models and write them and `checkpoint` files to t
  - `data/aclImdb/test/neg/`
  - `data/aclImdb/test/pos/`
 
+### Chapter 7
+ - `data/audio_dataset/`
 
 Questions, comments?
 ===================
