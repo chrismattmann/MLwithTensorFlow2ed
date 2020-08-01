@@ -38,7 +38,10 @@ for you to pull input data for use in training models from the book. Access the 
 [here](https://www.dropbox.com/sh/abjqqcwuzx2mttd/AADIM01H44Y-tdAHXUHt5ZWFa?dl=0).
 
 The pointers below let you know what data you need for what chapters, and where to put it. Unless otherwise
-not specified, the data should be placed into the `data` folder.
+not specified, the data should be placed into the `data` folder. Note that as you are running the notebooks
+the notebooks will generate TF models and write them and `checkpoint` files to the `models/` folder.
+
+## Data Input requirements
 
 ### Chapter 4
  - `data/311.csv`
@@ -58,6 +61,7 @@ Contributors
 ============
 * Chris A. Mattmann
 * Rob Royce (TF branch)
+* Philip Southam (Dockerfile build)
 
 License
 =======
