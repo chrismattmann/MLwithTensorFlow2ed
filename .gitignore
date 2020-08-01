@@ -1,3 +1,4 @@
+models/checkpoint
 libs
 data/*.csv
 data/cache
