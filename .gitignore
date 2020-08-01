@@ -1,3 +1,4 @@
+data/vgg*
 .ipynb_checkpoints
 aclImdb*
 311.csv
