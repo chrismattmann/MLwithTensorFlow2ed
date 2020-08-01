@@ -40,3 +40,4 @@ cuda*.sh
 LibriSpeech*
 RNN-Tutorial
 seq2seq
+models/*.ckpt*
