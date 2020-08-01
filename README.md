@@ -60,7 +60,7 @@ Send them to [Chris A. Mattmann](mailto:chris.mattmann@gmail.com).
 Contributors
 ============
 * Chris A. Mattmann
-* Rob Royce (TF branch)
+* Rob Royce (`tensorflow2` branch)
 * Philip Southam (Dockerfile build)
 
 License
