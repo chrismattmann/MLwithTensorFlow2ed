@@ -33,7 +33,8 @@ of them but we are happy to receive PRs for things we've missed.
  * Requests
  * [OpenCV](http://opencv.org/)
  * [Horovod](https://github.com/horovod/horovod) - use 0.18.2 (or 0.18.1) for use with the Maverick2 VGG Face model.
- * [VGG16](https://www.cs.toronto.edu/~frossard/post/vgg16/)  - grab `vgg16.py` and `vgg16_weights.npz`, `imagenet_classes.py` and `laska.png` - only works with Python2.7
+ * [VGG16](https://www.cs.toronto.edu/~frossard/post/vgg16/)  - grab `vgg16.py` and `vgg16_weights.npz`, `imagenet_classes.py` and `laska.png` - only works with Python2.7,  place
+in the `lib` directory.
 
 ## Data Requirements
 
