@@ -36,7 +36,8 @@ of them but we are happy to receive PRs for things we've missed.
  * [VGG16](https://www.cs.toronto.edu/~frossard/post/vgg16/)  - grab `vgg16.py` and `vgg16_weights.npz`, `imagenet_classes.py` and `laska.png` - only works with Python2.7,  place
 in the `lib` directory.
  * PyDub - for Chapter 17 in the LSTM chapter.
- * [Basic Units](https://raw.githubusercontent.com/matplotlib/matplotlib/master/examples/units/basic_units.py) - for use in Chapter 17.
+ * [Basic Units](https://raw.githubusercontent.com/matplotlib/matplotlib/master/examples/units/basic_units.py) - for use in Chapter 17. Place in `libs/basic_units/` folder.
+ * [RNN-Tutorial](https://github.com/mrubash1/RNN-Tutorial/) - used in Chapter 17 to help implement the deep speech model and train it.
 
 ## Data Requirements
 
@@ -89,6 +90,8 @@ the notebooks will generate TF models and write them and `checkpoint` files to t
 
 ### Chapter 17
  - `data/LibriSpeech`
+ - `libs/basic_units/`
+ - `libs/RNN-Tutorial/`
 
 ### Chapter 18
  - `data/seq2seq`
