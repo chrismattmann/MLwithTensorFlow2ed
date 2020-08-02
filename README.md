@@ -103,6 +103,9 @@ the notebooks will generate TF models and write them and `checkpoint` files to t
 Questions, comments?
 ===================
 Send them to [Chris A. Mattmann](mailto:chris.mattmann@gmail.com).
+Also please consider heading over to the
+[livebook forum](https://livebook.manning.com/#!/book/machine-learning-with-tensorflow-second-edition/discussion)
+where you can discuss the book with other authors too.
 
 Contributors
 ============
