@@ -32,6 +32,7 @@ of them but we are happy to receive PRs for things we've missed.
  * [Ystockquote](https://github.com/cgoldberg/ystockquote)
  * Requests
  * [OpenCV](http://opencv.org/)
+ * [Horovod](https://github.com/horovod/horovod) - use 0.18.2 (or 0.18.1) for use with the Maverick2 VGG Face model.
 
 ## Data Requirements
 
@@ -77,6 +78,7 @@ the notebooks will generate TF models and write them and `checkpoint` files to t
  - `data/vgg-face` - The actual VGG face data
  - `data/vgg_face_full_urls.csv` - Metadata informmation about VGG Face URLs
  - `data/vgg_face_full.csv` - Metadata information about all VGG Face data
+ - `data/vgg-models/checkpoints-1e3x4-2e4-09202019` - To run the VGG Face Estimator additional example
 
 ### Chapter 16
  - `data/international-airline-passengers.csv`
