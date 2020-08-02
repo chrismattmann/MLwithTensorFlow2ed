@@ -84,8 +84,10 @@ the notebooks will generate TF models and write them and `checkpoint` files to t
  - `data/international-airline-passengers.csv`
 
 ### Chapter 17
-- `data/LibriSpeech`
+ - `data/LibriSpeech`
 
+### Chapter 18
+ - `data/seq2seq`
 
 Questions, comments?
 ===================
