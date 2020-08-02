@@ -66,6 +66,10 @@ the notebooks will generate TF models and write them and `checkpoint` files to t
  - `data/cifar-10-batches-py`
  - `data/MNIST_data/` (if you try the MNIST extra example)
 
+### Chapter 14
+ - `data/cifar-10-batches-py`
+
+
 Questions, comments?
 ===================
 Send them to [Chris A. Mattmann](mailto:chris.mattmann@gmail.com).
