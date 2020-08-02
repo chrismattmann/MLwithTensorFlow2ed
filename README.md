@@ -69,6 +69,8 @@ the notebooks will generate TF models and write them and `checkpoint` files to t
 ### Chapter 14
  - `data/cifar-10-batches-py`
 
+### Chapter 15
+ - `data/cifar-10-batches-py`
 
 Questions, comments?
 ===================
