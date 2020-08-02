@@ -61,6 +61,9 @@ the notebooks will generate TF models and write them and `checkpoint` files to t
 ### Chapter 10
  - `data/mobypos.txt`
 
+### Chapter 12
+ - `data/cifar-10-batches-py`
+ - `data/MNIST_data/` (if you try the MNIST extra example)
 
 Questions, comments?
 ===================
