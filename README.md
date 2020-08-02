@@ -109,7 +109,7 @@ Contributors
 ============
 * Chris A. Mattmann
 * Rob Royce (`tensorflow2` branch)
-* Philip Southam (Dockerfile build)
+* Philip Southam (Dockerfile build in `docker` branch)
 
 License
 =======
