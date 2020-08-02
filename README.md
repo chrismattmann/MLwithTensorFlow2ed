@@ -78,6 +78,12 @@ the notebooks will generate TF models and write them and `checkpoint` files to t
  - `data/vgg_face_full_urls.csv` - Metadata informmation about VGG Face URLs
  - `data/vgg_face_full.csv` - Metadata information about all VGG Face data
 
+### Chapter 16
+ - `data/international-airline-passengers.csv`
+
+### Chapter 17
+- 'data/LibriSpeech`
+
 
 Questions, comments?
 ===================
