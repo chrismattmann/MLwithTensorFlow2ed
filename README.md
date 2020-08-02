@@ -29,6 +29,7 @@ of them but we are happy to receive PRs for things we've missed.
  * SKLearn - for various helper functions
  * [Bregman Toolkit](https://github.com/bregmanstudio/BregmanToolkit/) (for audio examples in Chapter 7)
  * [Tika](http://github.com/chrismattmann/tika-python)
+ * [Ystockquote](https://github.com/cgoldberg/ystockquote)
 
 ## Data Requirements
 
