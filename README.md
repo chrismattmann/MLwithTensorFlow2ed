@@ -76,7 +76,7 @@ the notebooks will generate TF models and write them and `checkpoint` files to t
  - `data/vgg_face_dataset` - The VGG face metadata including Celeb Names
  - `data/vgg-face` - The actual VGG face data
  - `data/vgg_face_full_urls.csv` - Metadata informmation about VGG Face URLs
- - `data/vgg_face_full.csv' - Metadata information about all VGG Face data
+ - `data/vgg_face_full.csv` - Metadata information about all VGG Face data
 
 
 Questions, comments?
