@@ -30,6 +30,8 @@ of them but we are happy to receive PRs for things we've missed.
  * [Bregman Toolkit](https://github.com/bregmanstudio/BregmanToolkit/) (for audio examples in Chapter 7)
  * [Tika](http://github.com/chrismattmann/tika-python)
  * [Ystockquote](https://github.com/cgoldberg/ystockquote)
+ * Requests
+ * [OpenCV](http://opencv.org/)
 
 ## Data Requirements
 
@@ -71,6 +73,11 @@ the notebooks will generate TF models and write them and `checkpoint` files to t
 
 ### Chapter 15
  - `data/cifar-10-batches-py`
+ - `data/vgg_face_dataset` - The VGG face metadata including Celeb Names
+ - `data/vgg-face` - The actual VGG face data
+ - `data/vgg_face_full_urls.csv` - Metadata informmation about VGG Face URLs
+ - `data/vgg_face_full.csv' - Metadata information about all VGG Face data
+
 
 Questions, comments?
 ===================
