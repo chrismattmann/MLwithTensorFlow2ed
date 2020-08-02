@@ -36,6 +36,7 @@ of them but we are happy to receive PRs for things we've missed.
  * [VGG16](https://www.cs.toronto.edu/~frossard/post/vgg16/)  - grab `vgg16.py` and `vgg16_weights.npz`, `imagenet_classes.py` and `laska.png` - only works with Python2.7,  place
 in the `lib` directory.
  * PyDub - for Chapter 17 in the LSTM chapter.
+ * [Basic Units](https://raw.githubusercontent.com/matplotlib/matplotlib/master/examples/units/basic_units.py) - for use in Chapter 17.
 
 ## Data Requirements
 
