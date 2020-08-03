@@ -1,3 +1,9 @@
+models/checkpoint
+libs
+data/*.csv
+data/cache
+data/vgg*
+data/tb_files*
 .ipynb_checkpoints
 aclImdb*
 311.csv
@@ -40,3 +46,4 @@ cuda*.sh
 LibriSpeech*
 RNN-Tutorial
 seq2seq
+models/*.ckpt*
