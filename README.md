@@ -29,6 +29,15 @@ of them but we are happy to receive PRs for things we've missed.
  * SKLearn - for various helper functions
  * [Bregman Toolkit](https://github.com/bregmanstudio/BregmanToolkit/) (for audio examples in Chapter 7)
  * [Tika](http://github.com/chrismattmann/tika-python)
+ * [Ystockquote](https://github.com/cgoldberg/ystockquote)
+ * Requests
+ * [OpenCV](http://opencv.org/)
+ * [Horovod](https://github.com/horovod/horovod) - use 0.18.2 (or 0.18.1) for use with the Maverick2 VGG Face model.
+ * [VGG16](https://www.cs.toronto.edu/~frossard/post/vgg16/)  - grab `vgg16.py` and `vgg16_weights.npz`, `imagenet_classes.py` and `laska.png` - only works with Python2.7,  place
+in the `lib` directory.
+ * PyDub - for Chapter 17 in the LSTM chapter.
+ * [Basic Units](https://raw.githubusercontent.com/matplotlib/matplotlib/master/examples/units/basic_units.py) - for use in Chapter 17. Place in `libs/basic_units/` folder.
+ * [RNN-Tutorial](https://github.com/mrubash1/RNN-Tutorial/) - used in Chapter 17 to help implement the deep speech model and train it.
 
 ## Data Requirements
 
@@ -52,6 +61,44 @@ the notebooks will generate TF models and write them and `checkpoint` files to t
  - `data/aclImdb/test/neg/`
  - `data/aclImdb/test/pos/`
 
+### Chapter 7
+ - `data/audio_dataset/`
+
+### Chapter 8
+ - `data/User Identification From Walking Activity/`
+
+### Chapter 10
+ - `data/mobypos.txt`
+
+### Chapter 12
+ - `data/cifar-10-batches-py`
+ - `data/MNIST_data/` (if you try the MNIST extra example)
+
+### Chapter 14
+ - `data/cifar-10-batches-py`
+
+### Chapter 15
+ - `data/cifar-10-batches-py`
+ - `data/vgg_face_dataset` - The VGG face metadata including Celeb Names
+ - `data/vgg-face` - The actual VGG face data
+ - `data/vgg_face_full_urls.csv` - Metadata informmation about VGG Face URLs
+ - `data/vgg_face_full.csv` - Metadata information about all VGG Face data
+ - `data/vgg-models/checkpoints-1e3x4-2e4-09202019` - To run the VGG Face Estimator additional example
+
+### Chapter 16
+ - `data/international-airline-passengers.csv`
+
+### Chapter 17
+ - `data/LibriSpeech`
+ - `libs/basic_units/`
+ - `libs/RNN-Tutorial/`
+
+### Chapter 18
+ - `data/seq2seq`
+
+### Chapter 19
+ - `libs/vgg16/laska.png`
+ - `data/cloth_folding_rgb_vids`
 
 ## Setting up the environment (Mac & Linux; not sure about windows yet)
 
@@ -91,12 +138,13 @@ $ pipenv run jupyter notebook
 Questions, comments?
 ===================
 Send them to [Chris A. Mattmann](mailto:chris.mattmann@gmail.com).
+Also please consider heading over to the [livebook forum](https://livebook.manning.com/#!/book/machine-learning-with-tensorflow-second-edition/discussion) where you can discuss the book with other readers and the author too.
 
 Contributors
 ============
 * Chris A. Mattmann
 * Rob Royce (`tensorflow2` branch)
-* Philip Southam (Dockerfile build)
+* Philip Southam (Dockerfile build in `docker` branch)
 
 License
 =======

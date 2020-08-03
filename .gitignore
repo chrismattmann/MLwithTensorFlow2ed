@@ -3,6 +3,7 @@ libs
 data/*.csv
 data/cache
 data/vgg*
+data/tb_files*
 .ipynb_checkpoints
 aclImdb*
 311.csv
