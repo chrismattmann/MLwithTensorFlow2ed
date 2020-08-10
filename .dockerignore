@@ -1,2 +1,8 @@
-*
-!requirements.txt
+.git
+Dockerfile
+Pipfile
+*.sh
+libs
+models
+papers
+data
