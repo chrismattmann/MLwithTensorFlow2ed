@@ -1,7 +1,8 @@
 .git
 Dockerfile
 Pipfile
-*.sh
+run_environment.sh
+build_environment.sh
 libs
 models
 papers
