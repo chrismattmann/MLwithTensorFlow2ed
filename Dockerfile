@@ -22,11 +22,11 @@ RUN ldconfig
 
 WORKDIR  /usr/install/python27/bin
 RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-RUN /usr/install/python27/bin/python get-pip.py
+RUN /usr/install/python27/bin/python2.7 get-pip.py
 
-RUN  /usr/install/python27/bin/pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.14.0-cp27-none-linux_x86_64.whl
-RUN /usr/install/python27/bin/pip install -r /usr/src/mltf2/requirements-py2.txt
-RUN /usr/install/python27/bin/python -m pip install ipykernel
+RUN  /usr/install/python27/bin/pip2.7 install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.14.0-cp27-none-linux_x86_64.whl
+RUN /usr/install/python27/bin/pip2.7 install -r /usr/src/mltf2/requirements-py2.txt
+RUN /usr/install/python27/bin/python2.7 -m pip install ipykernel
 
 WORKDIR /usr/src/mltf2
 RUN bash ./download-libs.sh

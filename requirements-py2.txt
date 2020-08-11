@@ -9,3 +9,4 @@ ystockquote
 requests
 opencv-python==4.0.1.24
 pydub
+pillow
