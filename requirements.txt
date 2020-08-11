@@ -8,5 +8,5 @@ sklearn
 tika
 ystockquote
 requests
-opencv-python
+opencv-python==4.0.1.24
 pydub
