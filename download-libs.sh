@@ -10,7 +10,7 @@ echo "...done"
 
 echo "Downloading Ch17 libraries..."
 mkdir -p libs/basic_units/
-curl -L "https://raw.githubusercontent.com/matplotlib/matplotlib/master/examples/units/basic_units.py" -o libs/basic_units/basic_units.py
+curl -L "https://www.dropbox.com/s/bqmzpyfzz8eifna/basic_units.py?dl=0" -o libs/basic_units/basic_units.py
 pushd libs
 curl -L "https://github.com/mrubash1/RNN-Tutorial/archive/master.zip" -o RNN-Tutorial.zip
 unzip RNN-Tutorial.zip
