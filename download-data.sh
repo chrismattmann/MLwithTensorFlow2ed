@@ -22,6 +22,7 @@ mkdir audio_dataset && mv audio_dataset.zip audio_dataset && pushd audio_dataset
 unzip audio_dataset.zip && mv audio_dataset.zip ..
 popd
 popd
+curl -L "https://www.dropbox.com/s/r7sbwckqvqy7uil/TalkingMachinesPodcast.wav?dl=0" -o data/TalkingMachinesPodcast.wav
 echo "...done"
 
 echo "Downloading Ch8 data..."
