@@ -63,6 +63,7 @@ the notebooks will generate TF models and write them and `checkpoint` files to t
 
 ### Chapter 7
  - `data/audio_dataset/`
+ - `data/TalkingMachinesPodcast.wav`
 
 ### Chapter 8
  - `data/User Identification From Walking Activity/`
