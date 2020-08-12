@@ -1,13 +1,24 @@
 FROM python:3.7-slim
 
+# Internal unpriviled user will have this ID:
+ENV CONTAINER_USER_ID="mltf2" \
+    CONTAINER_GROUP_ID="mltf2"
+
 COPY . /usr/src/mltf2/
 WORKDIR  /usr/src/mltf2/
 RUN mkdir data  && mkdir models && mkdir libs
 
 RUN apt-get update \
-    && apt-get install -y cmake gcc g++ mpi-default-bin libsndfile1-dev curl zlib1g-dev zlib1g libssl-dev libffi-dev \
+    && apt-get install -y cmake gcc g++ mpi-default-bin pkg-config libpng-dev libfreetype6-dev libsndfile1-dev curl zlib1g-dev zlib1g libssl-dev libffi-dev \
        zip unzip \
     && pip install -r requirements.txt && pip install horovod~="0.18.2"
+
+# creates a user "mltf2"
+RUN useradd -U -d /home/mltf2 -s /bin/sh ${CONTAINER_USER_ID}
+RUN mkdir /home/mltf2
+
+# permissions
+RUN chown -R mltf2:mltf2 /home/mltf2
 
 # bulid custom Python2 for Bregman Toolkit and VGG16.py
 WORKDIR /usr/src/python27
@@ -36,9 +47,10 @@ RUN /usr/install/python27/bin/python setup.py install
 WORKDIR /usr/src/mltf2
 RUN bash ./download-data.sh
 
-ENV HOME /tmp
+# permissions
+RUN chown -R mltf2:mltf2 /usr/src/mltf2
 
-USER 1000:1000
+USER mltf2
 
 WORKDIR /usr/src/mltf2
 ENTRYPOINT ["bash", "/usr/src/mltf2/mltf-entrypoint.sh"]
