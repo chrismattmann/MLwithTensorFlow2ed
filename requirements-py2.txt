@@ -1,6 +1,6 @@
 jupyter
 pandas
-matplotlib
+matplotlib==2.0.2
 nltk
 tqdm
 sklearn
