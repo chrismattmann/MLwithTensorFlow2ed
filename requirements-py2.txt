@@ -5,6 +5,7 @@ matplotlib==2.0.2
 nltk
 tqdm
 sklearn
+scikit-image
 tika
 ystockquote
 yfinance
