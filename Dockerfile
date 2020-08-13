@@ -7,10 +7,10 @@ ENV CONTAINER_USER_ID="mltf2" \
 COPY . /usr/src/mltf2/
 WORKDIR  /usr/src/mltf2/
 RUN mkdir data  && mkdir models && mkdir libs
-
+RUN mkdir /usr/share/man/man1/
 RUN apt-get update \
     && apt-get install -y cmake gcc g++ mpi-default-bin pkg-config libpng-dev libfreetype6-dev libsndfile1-dev curl zlib1g-dev zlib1g libssl-dev libffi-dev \
-       zip unzip \
+       zip unzip openjdk-11-jre software-properties-common \
     && pip install -r requirements.txt && pip install horovod~="0.18.2"
 
 # creates a user "mltf2"
