@@ -4,7 +4,7 @@ echo "Downloading Ch7 libraries..."
 mkdir -p libs/BregmanToolkit/
 curl -L "https://www.dropbox.com/sh/dkud00y61fq3ou7/AABYAwHiDmisx13rOAbvQzOWa?dl=0" -o libs/BregmanToolkit/BregmanToolkit.zip
 pushd libs/BregmanToolkit/
-unzip BregmanToolkit.zip
+unzip BregmanToolkit.zip && rm BregmanToolkit.zip
 popd
 echo "...done"
 
