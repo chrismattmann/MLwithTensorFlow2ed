@@ -73,9 +73,9 @@ popd
 echo "...done"
 
 echo "Downloading Ch19 data..."
-mkdir -p data/cloth_folding_vids
-curl -L "https://www.dropbox.com/sh/jjozbrynieo7hf2/AAB3mHI5DcWFIl9kEmbNPIFXa?dl=0" -o data/cloth_folding_vids/cloth_folding_vids.zip
-pushd data/cloth_folding_vids
+mkdir -p data/cloth_folding_rgb_vids
+curl -L "https://www.dropbox.com/sh/jjozbrynieo7hf2/AAB3mHI5DcWFIl9kEmbNPIFXa?dl=0" -o data/cloth_folding_rgb_vids/cloth_folding_vids.zip
+pushd data/cloth_folding_rgb_vids
 unzip cloth_folding_vids.zip
 popd
 
