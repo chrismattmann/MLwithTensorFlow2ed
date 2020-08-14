@@ -48,9 +48,9 @@ curl -L "https://www.dropbox.com/s/yq5med963kfl23w/vgg_face_dataset.tar.gz?dl=0"
 pushd data
 tar xvzf vgg_face_dataset.tar.gz
 popd
-mkdir -p data/vgg_face
-curl -L "https://www.dropbox.com/s/xk70h7w35fm8we8/vgg-face-small.tar.gz?dl=0" -o data/vgg_face/vgg-face-small.tar.gz
-pushd data/vgg_face
+mkdir -p data/vgg-face
+curl -L "https://www.dropbox.com/s/xk70h7w35fm8we8/vgg-face-small.tar.gz?dl=0" -o data/vgg-face/vgg-face-small.tar.gz
+pushd data/vgg-face
 tar xvzf vgg-face-small.tar.gz && mv vgg-face-small.tar.gz ..
 popd
 curl -L "https://www.dropbox.com/s/yiacsezcmjhfn9c/vgg_face_full_urls.csv?dl=0" -o data/vgg_face_full_urls.csv
