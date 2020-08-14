@@ -19,6 +19,11 @@ notebooks are below. You should PIP install them using your favorite Python. The
 the book have been shown to work in Python 2.7, and Python 3.7. I didn't have time to test all 
 of them but we are happy to receive PRs for things we've missed.
 
+Additionally the [Docker](Dockerfile) has been tested and on latest Docker for Mac only adds
+about 1.5% overhead on CPU mode and is totally usable and a one-shot easy installer for all of
+the dependencies. Browse the file to see what  you'll need to install and how to run the 
+code locally if desired.
+
  * TensorFlow 
  * Jupyter
  * Pandas - for data frames and easy tabular data manipulation
@@ -63,6 +68,7 @@ the notebooks will generate TF models and write them and `checkpoint` files to t
 
 ### Chapter 7
  - `data/audio_dataset/`
+ - `data/TalkingMachinesPodcast.wav`
 
 ### Chapter 8
  - `data/User Identification From Walking Activity/`
@@ -99,6 +105,47 @@ the notebooks will generate TF models and write them and `checkpoint` files to t
 ### Chapter 19
  - `libs/vgg16/laska.png`
  - `data/cloth_folding_rgb_vids`
+
+## Setting up the environment (Tested on Mac and Linux)
+
+### Using Docker
+
+#### Building the image
+
+```shell
+./build_environment.sh
+```
+
+#### Running the notebook from docker
+
+```shell
+./run_environment.sh
+```
+
+### Using your local python
+
+#### Building the environment
+
+If you want to build with your existing Python that's fine
+you  will need a Python2.7 for some of the chapters noted
+above (like chapter7 which uses `BregmanToolkit`), and
+python 3.7 for everything else. The requirements.txt file
+is different for each, so watch while one to pip install
+below.
+
+```shell
+#Python2.7
+$ pip2.7 install -r requirements-py2.txt
+
+#Python3.7
+$ pip3.7 install -r requirements.txt
+```
+
+#### Running the notebook from your local environment
+
+```shell
+$ jupyter notebook
+```
 
 Questions, comments?
 ===================
