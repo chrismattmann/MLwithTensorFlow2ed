@@ -19,6 +19,11 @@ notebooks are below. You should PIP install them using your favorite Python. The
 the book have been shown to work in Python 2.7, and Python 3.7. I didn't have time to test all 
 of them but we are happy to receive PRs for things we've missed.
 
+Additionally the [Docker](Dockerfile) has been tested and on latest Docker for Mac only adds
+about 1.5% overhead on CPU mode and is totally usable and a one-shot easy installer for all of
+the dependencies. Browse the file to see what  you'll need to install and how to run the 
+code locally if desired.
+
  * TensorFlow 
  * Jupyter
  * Pandas - for data frames and easy tabular data manipulation
@@ -101,9 +106,9 @@ the notebooks will generate TF models and write them and `checkpoint` files to t
  - `libs/vgg16/laska.png`
  - `data/cloth_folding_rgb_vids`
 
-## Setting up the environment (Mac & Linux; not sure about windows yet)
+## Setting up the environment (Tested on Mac and Linux)
 
-### Using docker
+### Using Docker
 
 #### Building the image
 
@@ -121,19 +126,25 @@ the notebooks will generate TF models and write them and `checkpoint` files to t
 
 #### Building the environment
 
-We're using the wonderful [pipenv](https://pipenv.kennethreitz.org/en/stable/) to manage dependencies.
+If you want to build with your existing Python that's fine
+you  will need a Python2.7 for some of the chapters noted
+above (like chapter7 which uses `BregmanToolkit`), and
+python 3.7 for everything else. The requirements.txt file
+is different for each, so watch while one to pip install
+below.
 
 ```shell
-$ pip install -U --user https://github.com/pypa/pipenv/archive/3e63f078adcdd0a053e4af47b0849bff0018f899.zip
+#Python2.7
+$ pip2.7 install -r requirements-py2.txt
 
-# Assuming ~/.local/bin is in your $PATH, if not you should add it.
-$ pipenv install
+#Python3.7
+$ pip3.7 install -r requirements.txt
 ```
 
 #### Running the notebook from your local environment
 
 ```shell
-$ pipenv run jupyter notebook
+$ jupyter notebook
 ```
 
 Questions, comments?
