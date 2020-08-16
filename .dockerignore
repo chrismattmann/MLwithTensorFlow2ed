@@ -1,0 +1,9 @@
+.git
+Dockerfile
+Pipfile
+run_environment.sh
+build_environment.sh
+libs
+models
+papers
+data
