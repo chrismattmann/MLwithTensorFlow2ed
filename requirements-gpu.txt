@@ -1,4 +1,4 @@
-tensorflow==1.15.0
+tensorflow_gpu>=1.15.0
 jupyter
 pandas
 pandas_datareader
