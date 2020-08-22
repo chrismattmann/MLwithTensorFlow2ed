@@ -1,0 +1,15 @@
+jupyter
+pandas
+pandas_datareader
+matplotlib==2.0.2
+nltk
+tqdm
+sklearn
+scikit-image
+tika
+ystockquote
+yfinance
+requests
+opencv-python==4.0.1.24
+pydub
+pillow
