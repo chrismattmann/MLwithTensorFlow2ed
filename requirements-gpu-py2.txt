@@ -1,8 +1,7 @@
-tensorflow==1.15.0
 jupyter
 pandas
 pandas_datareader
-matplotlib==3.0.2
+matplotlib==2.0.2
 nltk
 tqdm
 sklearn
@@ -11,6 +10,6 @@ tika
 ystockquote
 yfinance
 requests
-python_speech_features
 opencv-python==4.0.1.24
 pydub
+pillow
