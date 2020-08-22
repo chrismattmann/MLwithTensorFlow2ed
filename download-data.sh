@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 mkdir -p data
+mkdir -p data/cache
 
 echo "Downloading Ch4 data..."
 curl -L "https://www.dropbox.com/s/naw774olqkve7sc/311.csv?dl=0" -o data/311.csv
