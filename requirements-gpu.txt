@@ -11,5 +11,6 @@ tika
 ystockquote
 yfinance
 requests
+python_speech_features
 opencv-python==4.0.1.24
 pydub
