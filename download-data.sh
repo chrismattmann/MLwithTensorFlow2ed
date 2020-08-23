@@ -60,6 +60,7 @@ curl -L "https://www.dropbox.com/s/jn6jcu26tx13fzz/vgg-models.zip?dl=0" -o data/
 pushd data
 unzip vgg-models.zip
 popd
+curl -L "https://www.dropbox.com/s/k21cpcl43gmpfzv/vgg_face_weights.h5?dl=0" -o models/vgg_face_weights.h5
 echo "...done"
 
 echo "Downloading Ch16 data..."
