@@ -113,12 +113,14 @@ the notebooks will generate TF models and write them and `checkpoint` files to t
 #### Building the image
 
 ```shell
+# Only builds the CPU Docker for now
 ./build_environment.sh
 ```
 
 #### Running the notebook from docker
 
 ```shell
+# Only runs the CPU Docker for now
 ./run_environment.sh
 ```
 
@@ -134,11 +136,17 @@ is different for each, so watch while one to pip install
 below.
 
 ```shell
-#Python2.7
+#Python2.7 - CPU
 $ pip2.7 install -r requirements-py2.txt
 
-#Python3.7
+#Python3.7 - CPU
 $ pip3.7 install -r requirements.txt
+
+#Python2.7 - GPU
+$ pip2.7 install -r requirements-gpu-py2.txt
+
+#Python3.7 - GPU
+$ pip3.7 install -r requirements-gpu.txt
 ```
 
 #### Running the notebook from your local environment
