@@ -47,7 +47,7 @@ echo "...done"
 echo "Downloading Ch15 data (VGG Face)..."
 curl -L "https://www.dropbox.com/s/yq5med963kfl23w/vgg_face_dataset.tar.gz?dl=0" -o data/vgg_face_dataset.tar.gz
 pushd data
-tar xvzf vgg_face_dataset.tar.gz
+tar xvf vgg_face_dataset.tar.gz
 popd
 mkdir -p data/vgg_face
 curl -L "https://www.dropbox.com/s/xk70h7w35fm8we8/vgg-face-small.tar.gz?dl=0" -o data/vgg_face/vgg-face-small.tar.gz
