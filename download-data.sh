@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 mkdir -p data
+mkdir -p data/cache
 
 echo "Downloading Ch4 data..."
 curl -L "https://www.dropbox.com/s/naw774olqkve7sc/311.csv?dl=0" -o data/311.csv
@@ -46,7 +47,7 @@ echo "...done"
 echo "Downloading Ch15 data (VGG Face)..."
 curl -L "https://www.dropbox.com/s/yq5med963kfl23w/vgg_face_dataset.tar.gz?dl=0" -o data/vgg_face_dataset.tar.gz
 pushd data
-tar xvzf vgg_face_dataset.tar.gz
+tar xvf vgg_face_dataset.tar.gz
 popd
 mkdir -p data/vgg-face
 curl -L "https://www.dropbox.com/s/xk70h7w35fm8we8/vgg-face-small.tar.gz?dl=0" -o data/vgg-face/vgg-face-small.tar.gz
@@ -59,6 +60,7 @@ curl -L "https://www.dropbox.com/s/jn6jcu26tx13fzz/vgg-models.zip?dl=0" -o data/
 pushd data
 unzip vgg-models.zip
 popd
+curl -L "https://www.dropbox.com/s/k21cpcl43gmpfzv/vgg_face_weights.h5?dl=0" -o models/vgg_face_weights.h5
 echo "...done"
 
 echo "Downloading Ch16 data..."
