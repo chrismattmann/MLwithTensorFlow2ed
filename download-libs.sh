@@ -8,6 +8,10 @@ unzip BregmanToolkit.zip
 popd
 echo "...done"
 
+echo "Downloading Ch15 libraries..."
+curl -L "https://www.dropbox.com/s/ljgs3349l914xhr/haarcascade_frontalface_default.xml?dl=0" -o libs/haarcascade_frontalface_default.xml
+echo "...done"
+
 echo "Downloading Ch17 libraries..."
 mkdir -p libs/basic_units/
 curl -L "https://www.dropbox.com/s/bqmzpyfzz8eifna/basic_units.py?dl=0" -o libs/basic_units/basic_units.py
