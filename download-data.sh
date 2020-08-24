@@ -67,6 +67,13 @@ echo "Downloading Ch16 data..."
 curl -L  "https://www.dropbox.com/s/xa73rwzint8bbr3/international-airline-passengers.csv?dl=0" -o data/international-airline-passengers.csv
 echo "...done"
 
+echo "Download Ch17 data..."
+curl -L "https://www.dropbox.com/s/bjxl20toeqqrz45/LibriSpeech.tar.gz?dl=0" -o data/LibriSpeech.tar.gz
+pushd data
+tar xvzf LibriSpeech.tar.gz
+popd
+echo "...done"
+
 echo "Downloading Ch18 data..."
 curl -L "https://www.dropbox.com/s/9mwr58i9fsxgexd/seq2seq.tar.gz?dl=0" -o  data/seq2seq.tar.gz
 pushd data
