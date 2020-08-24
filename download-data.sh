@@ -68,10 +68,9 @@ curl -L  "https://www.dropbox.com/s/xa73rwzint8bbr3/international-airline-passen
 echo "...done"
 
 echo "Download Ch17 data..."
-curl -L "https://www.dropbox.com/s/bjxl20toeqqrz45/LibriSpeech.tar.gz?dl=0" -o data/LibriSpeech.tar.gz
-pushd data
+curl -L "https://www.dropbox.com/s/bjxl20toeqqrz45/LibriSpeech.tar.gz?dl=0" -o LibriSpeech.tar.gz
 tar xvzf LibriSpeech.tar.gz
-popd
+mv LibriSpeech.tar.gz data
 echo "...done"
 
 echo "Downloading Ch18 data..."
