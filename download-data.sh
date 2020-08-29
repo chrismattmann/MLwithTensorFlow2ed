@@ -83,6 +83,12 @@ curl -L "https://www.dropbox.com/s/tl27ja252tpi9sy/vgg-models.tar.xz?dl=0" -o vg
 curl -L "https://www.dropbox.com/s/bfmr80r7jaq0v88/vgg-models.tar.xz.sha256?dl=0" -o vgg-models.tar.xz.sha256
 sha256sum -c vgg-models.tar.xz.sha256 && rm vgg-models.tar.xz.sha256
 tar -C data -xJvf vgg-models.tar.xz && rm vgg-models.tar.xz
+pushd models
+curl -L "https://www.dropbox.com/s/uinp84jar0v9rtx/vgg_face_weights.h5.xz?dl=0" -o vgg_face_weights.h5.xz
+curl -L "https://www.dropbox.com/s/fkw89nbrkwcjs7q/vgg_face_weights.h5.xz.sha256?dl=0" -o vgg_face_weights.h5.xz.sha256
+sha256sum -c vgg_face_weights.h5.xz.sha256 && rm vgg_face_weights.h5.xz.sha256
+unxz vgg_face_weights.h5.xz
+popd
 echo "...done"
 
 echo "Downloading Ch16 data..."
