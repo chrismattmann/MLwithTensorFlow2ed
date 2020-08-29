@@ -6,13 +6,13 @@ written by [Chris Mattmann](http://twitter.com/chrismattmann/).
 
 The code in this repository is mostly [Jupyter Notebooks](http://jupyter.org/) that correspond
 to the numbered listings in each chapter of the book. The code has beeen tested with 
-[TensorFlow 1.14.0](https://github.com/tensorflow/docs/tree/r1.14/site/en/api_docs) but there 
+[TensorFlow 1.15.2](https://www.tensorflow.org/versions/r1.15/api_docs/python/tf) but there 
 is an experimental branch for [TensorFlow 2.x](http://github.com/chrismattmann/tree/tensorflow2).
 Please be patient as we port the examples to TF 2.x.
 
 ## Pre-requisites
 
-Though the book has [TensorFlow](http://twitter.cm/Tensorflow) in the name, the book is also
+Though the book has [TensorFlow](http://twitter.com/tensorflow) in the name, the book is also
 just as machine about generalized machine learning and its theory, and the suite of frameworks
 that also come in handy when dealing with machine learning. The requirements for running the 
 notebooks are below. You should PIP install them using your favorite Python. The examples from
@@ -90,6 +90,7 @@ the notebooks will generate TF models and write them and `checkpoint` files to t
  - `data/vgg_face_full_urls.csv` - Metadata informmation about VGG Face URLs
  - `data/vgg_face_full.csv` - Metadata information about all VGG Face data
  - `data/vgg-models/checkpoints-1e3x4-2e4-09202019` - To run the VGG Face Estimator additional example
+ - `models/vgg_face_weights.h5` - To run the VGG Face verification additional example
 
 ### Chapter 16
  - `data/international-airline-passengers.csv`
@@ -113,14 +114,14 @@ the notebooks will generate TF models and write them and `checkpoint` files to t
 #### Building the image
 
 ```shell
-# Only builds the CPU Docker for now
+# Only builds a Docker compatible with GPU and CPU.
 ./build_environment.sh
 ```
 
 #### Running the notebook from docker
 
 ```shell
-# Only runs the CPU Docker for now
+# Runs in GPU and CPU mode and will look for NVIDIA drivers first and fall back to reg CPU.
 ./run_environment.sh
 ```
 
@@ -136,17 +137,14 @@ is different for each, so watch while one to pip install
 below.
 
 ```shell
+#Python3.7 - GPU and CPU
+$ pip3.7 install -r requirements.txt
+
 #Python2.7 - CPU
 $ pip2.7 install -r requirements-py2.txt
 
-#Python3.7 - CPU
-$ pip3.7 install -r requirements.txt
-
 #Python2.7 - GPU
 $ pip2.7 install -r requirements-gpu-py2.txt
-
-#Python3.7 - GPU
-$ pip3.7 install -r requirements-gpu.txt
 ```
 
 #### Running the notebook from your local environment
@@ -164,7 +162,7 @@ Contributors
 ============
 * Chris A. Mattmann
 * Rob Royce (`tensorflow2` branch)
-* Philip Southam (Dockerfile build in `docker` branch)
+* [Philip Southam](https://github.com/philipsoutham) (Dockerfile build in `docker` branch)
 
 License
 =======
