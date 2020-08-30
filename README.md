@@ -125,6 +125,21 @@ the notebooks will generate TF models and write them and `checkpoint` files to t
 ./run_environment.sh
 ```
 
+#### Using a GPU
+
+You need to install [nvidia-docker](https://github.com/NVIDIA/nvidia-docker) to use your
+GPU in docker. Follow these instructions (also on the linked page)
+
+```shell
+# Add the package repositories
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
+curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+
+sudo apt-get update && sudo apt-get install -y nvidia-container-toolkit
+sudo systemctl restart docker
+```
+
 ### Using your local python
 
 #### Building the environment
