@@ -7,7 +7,7 @@ written by [Chris Mattmann](http://twitter.com/chrismattmann/).
 The code in this repository is mostly [Jupyter Notebooks](http://jupyter.org/) that correspond
 to the numbered listings in each chapter of the book. The code has beeen tested with 
 [TensorFlow 1.15.2](https://www.tensorflow.org/versions/r1.15/api_docs/python/tf) but there 
-is an experimental branch for [TensorFlow 2.x](http://github.com/chrismattmann/tree/tensorflow2).
+is an experimental branch for [TensorFlow 2.x](http://github.com/chrismattmann/MLwithTensorFlow2ed/tree/tensorflow2).
 Please be patient as we port the examples to TF 2.x.
 
 ## Pre-requisites
