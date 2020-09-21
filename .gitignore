@@ -1,5 +1,6 @@
 models/checkpoint
 libs
+data/seq2seq*
 data/*.csv
 data/cache
 data/vgg*
@@ -45,5 +46,5 @@ log.csv
 cuda*.sh
 LibriSpeech*
 RNN-Tutorial
-seq2seq
+models/seq2seq*
 models/*.ckpt*
