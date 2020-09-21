@@ -7,8 +7,9 @@ written by [Chris Mattmann](http://twitter.com/chrismattmann/).
 The code in this repository is mostly [Jupyter Notebooks](http://jupyter.org/) that correspond
 to the numbered listings in each chapter of the book. The code has beeen tested with 
 [TensorFlow 1.15.2](https://www.tensorflow.org/versions/r1.15/api_docs/python/tf) but there 
-is an experimental branch for [TensorFlow 2.x](https://github.com/chrismattmann/MLwithTensorFlow2ed/tree/tensorflow2/TFv2).
-Please be patient as we port the examples to TF 2.x.
+is a complete porting of the code in the book to [TensorFlow 2.x](https://github.com/chrismattmann/MLwithTensorFlow2ed/tree/master/TFv2).
+
+We welcome contributions to the TF2 port and to all of the notebooks in TF1.15.x too!
 
 ## Pre-requisites
 
@@ -50,6 +51,9 @@ You will generate lots of data when running the notebooks in particular building
 build those models you will also need data. I have created an easy [DropBox](http://dropbox.com/) folder
 for you to pull input data for use in training models from the book. Access the DropBox folder 
 [here](https://www.dropbox.com/sh/abjqqcwuzx2mttd/AADIM01H44Y-tdAHXUHt5ZWFa?dl=0).
+
+Note that the Docker build described below automatically pulls down all the data for you and incorporates it
+into the Docker environment so that you don't have to download a thing.
 
 The pointers below let you know what data you need for what chapters, and where to put it. Unless otherwise
 not specified, the data should be placed into the `data` folder. Note that as you are running the notebooks
