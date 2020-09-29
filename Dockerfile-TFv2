@@ -1,0 +1,74 @@
+FROM tensorflow/tensorflow:2.3.0-gpu-jupyter
+
+ENV CONTAINER_USER_ID="mltf2" \
+    CONTAINER_GROUP_ID="mltf2"
+
+WORKDIR /usr/src/mltf2
+COPY download-libs.sh .
+COPY download-data.sh .
+
+RUN apt-get update\
+    && apt-get full-upgrade -y\
+    && apt-get autoremove -y\
+    && apt-get install --no-install-recommends -y\
+        cmake\
+        gcc\
+        g++\
+        mpi-default-bin\
+        pkg-config\
+        libpng-dev\
+        libfreetype6-dev\
+        libsndfile1-dev\
+        libsm6\
+        curl\
+        zlib1g-dev\
+        zlib1g\
+        libssl-dev\
+        libffi-dev\
+        zip\
+        unzip\
+        openjdk-11-jdk-headless\
+        lbzip2\
+        ffmpeg\
+    && apt-get clean all\
+    && useradd -U -d /home/mltf2 -s /bin/sh ${CONTAINER_USER_ID}\
+    && mkdir /home/mltf2\
+    && chown -R mltf2:mltf2 /home/mltf2\
+    && mkdir -p /usr/src/mltf2/\
+    && cd /usr/src/mltf2/\
+    && mkdir -p data/cache data/logs models libs\
+    && ./download-libs.sh\
+    && cd /usr/src/mltf2\
+    && ./download-data.sh
+
+COPY requirements-tf2.txt /tmp/requirements.txt
+RUN pip install -U pip && pip install -r /tmp/requirements.txt && rm -rf /root/.cache
+
+WORKDIR /usr/src/mltf2
+
+COPY ./TFv2/ch02 /usr/src/mltf2/ch02
+COPY ./TFv2/ch03 /usr/src/mltf2/ch03
+COPY ./TFv2/ch04 /usr/src/mltf2/ch04
+COPY ./TFv2/ch05 /usr/src/mltf2/ch05
+COPY ./TFv2/ch06 /usr/src/mltf2/ch06
+COPY ./TFv2/ch07 /usr/src/mltf2/ch07
+COPY ./TFv2/ch08 /usr/src/mltf2/ch08
+COPY ./TFv2/ch09 /usr/src/mltf2/ch09
+COPY ./TFv2/ch10 /usr/src/mltf2/ch10
+COPY ./TFv2/ch11 /usr/src/mltf2/ch11
+COPY ./TFv2/ch12 /usr/src/mltf2/ch12
+COPY ./TFv2/ch13 /usr/src/mltf2/ch13
+COPY ./TFv2/ch14 /usr/src/mltf2/ch14
+COPY ./TFv2/ch15 /usr/src/mltf2/ch15
+COPY ./TFv2/ch16 /usr/src/mltf2/ch16
+COPY ./TFv2/ch17 /usr/src/mltf2/ch17
+COPY ./TFv2/ch18 /usr/src/mltf2/ch18
+COPY ./TFv2/ch19 /usr/src/mltf2/ch19
+
+COPY figs /usr/src/mltf2/figs
+
+RUN chown -R mltf2:mltf2 ch* models data/cache data/logs
+COPY mltf-entrypoint.sh .
+USER mltf2
+
+ENTRYPOINT ["bash", "/usr/src/mltf2/mltf-entrypoint.sh"]
