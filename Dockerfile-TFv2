@@ -67,7 +67,7 @@ COPY ./TFv2/ch19 /usr/src/mltf2/ch19
 
 COPY figs /usr/src/mltf2/figs
 
-RUN chown -R mltf2:mltf2 ch* models data/cache data/logs
+RUN chown -R mltf2:mltf2 ch* models data/cache data/logs libs
 COPY mltf-entrypoint.sh .
 USER mltf2
 
