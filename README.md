@@ -144,14 +144,16 @@ the notebooks will generate TF models and write them and `checkpoint` files to t
 
 ```shell
 # Only builds a Docker compatible with GPU and CPU.
-./build_environment.sh
+./build_environment.sh #TensorFlow1
+./build_TFv2_environment.sh #TensorFlow2
 ```
 
 #### Running the notebook from docker
 
 ```shell
 # Runs in GPU and CPU mode and will look for NVIDIA drivers first and fall back to reg CPU.
-./run_environment.sh
+./run_environment.sh #TensorFlow1
+./run_TFv2_environment.sh # TensorFlow2
 ```
 
 #### Using a GPU
@@ -183,6 +185,9 @@ below.
 ```shell
 #Python3.7 - GPU and CPU
 $ pip3.7 install -r requirements.txt
+
+#Python3.7 - TensorFlow2 GPU and CPU
+$ pip3.7 install -r requirements-tf2.txt
 
 #Python2.7 - CPU
 $ pip2.7 install -r requirements-py2.txt
