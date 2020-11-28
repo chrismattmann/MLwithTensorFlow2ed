@@ -11,6 +11,31 @@ is a complete porting of the code in the book to [TensorFlow 2.x](https://github
 
 We welcome contributions to the TF2 port and to all of the notebooks in TF1.15.x too!
 
+## Quick Start
+
+The repository contains two fully functional [Docker](http://docker.io) images. The first runs with TF1.15.x and tracks
+with the book examples. You can get going by simply running from a command prompt:
+
+{{{
+$ docker pull chrismattmann/mltf2:latest
+$ ./run_environment.sh
+}}}
+
+This will pull the TF1.15.x image and start Juptyer running on localhost. Watch for the startup 
+message, and then click through (including the token needed past the `?` in the URL) to start
+Your Juptyer session.
+
+To run the TF2.x version of the code and notebooks you can similarly run:
+
+{{{
+$ docker pull chrismattmann/mltf2:tf2
+$ ./run_TFv2_environment.sh
+}}} 
+
+Follow the URL from the startup message.
+
+Enjoy!
+
 ## Pre-requisites
 
 Though the book has [TensorFlow](http://twitter.com/tensorflow) in the name, the book is also
