@@ -13,8 +13,7 @@ We welcome contributions to the TF2 port and to all of the notebooks in TF1.15.x
 
 ## Quick Start
 
-The repository contains two fully functional [Docker](http://docker.io) images. The first runs with TF1.15.x and tracks
-with the book examples. You can get going by simply running from a command prompt:
+The repository contains two fully functional [Docker](https://hub.docker.com/r/chrismattmann/mltf2/tags?page=1&ordering=last_updated) images. The first `latest` runs with TF1.15.x and tracks with the book examples. You can get going by simply running from a command prompt:
 
 ```
 $ docker pull chrismattmann/mltf2:latest
@@ -25,7 +24,7 @@ This will pull the TF1.15.x image and start Juptyer running on localhost. Watch 
 message, and then click through (including the token needed past the `?` in the URL) to start
 Your Juptyer session.
 
-To run the TF2.x version of the code and notebooks you can similarly run:
+To run the TF2.x version of the code and notebooks you can similarly run the `tf2` tag:
 
 ```
 $ docker pull chrismattmann/mltf2:tf2
