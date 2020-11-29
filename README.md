@@ -1,6 +1,6 @@
 Machine Learning with TensorFlow, 2nd Edition
 =============================================
-![Machine Learning with TensorFlow 2nd Edition](figs/mltf2.jpeg)
+![Machine Learning with TensorFlow 2nd Edition](figs/mltf2-cover.jpeg)
 
 This is the code repository for the 2nd edition of [Manning Publications'](http://manning.com/)
 [Machine Learning with TensorFlow](https://www.manning.com/books/machine-learning-with-tensorflow-second-edition?a_aid=5700fc87&a_bid=1e05f0bb) 
