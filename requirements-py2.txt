@@ -10,6 +10,6 @@ tika==1.24
 ystockquote==0.2.5
 yfinance==0.1.54
 requests==2.24.0
-opencv-python==4.0.1.24
+opencv-python==4.2.0.32
 pydub==0.24.1
 Pillow==7.1.0

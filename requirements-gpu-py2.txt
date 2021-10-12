@@ -11,6 +11,6 @@ tika
 ystockquote
 yfinance
 requests
-opencv-python==4.0.1.24
+opencv-python==4.2.0.32
 pydub
 pillow
