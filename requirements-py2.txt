@@ -2,7 +2,7 @@ jupyter==1.0.0
 pandas==0.24.2
 pandas-datareader==0.8.1
 matplotlib==2.0.2
-nltk==3.5
+nltk==3.10.0
 tqdm==4.48.2
 sklearn
 scikit-image==0.14.5
